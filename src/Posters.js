@@ -1,34 +1,23 @@
-const filmes = require('./filmes/listaFilmes')
+import filmes from './filmes/listaFilmes'
+import { useState } from 'react';
+// Adicionar tooltips
 
 const Posters = () => {
+  const [ listaFilmes, setListaFilmes ] = useState(filmes.slice(0, 4))
+  console.log(listaFilmes);
+  console.log(filmes)
   return (
- 
+    <div>
       <div className="row">
-        <div className="col-md-6 col-lg-3">
+      { listaFilmes.map( filme => (
+        <div className="col-md-6 col-lg-3" id={filme['id']}>
           <div className="card">
-            <img src="./img/posters/um-tio-quase-perfeito-2-poster-desktop.jpg" alt="" className="card-img-top" />
+            <img src={filme['img']} alt="" className="card-img-top" />
           </div>
         </div>
-        <div className="col-md-6 col-lg-3">
-          <div className="card">
-            <img src="./img/posters/mulher-maravilha-1984-poster-desktop.jpg" alt="" className="card-img-top" />
-          </div>
-        </div>
-        <div className="col-md-6 col-lg-3">
-          <div className="card">
-            <img src="./img/posters/o-tempo-com-voce-poster-desktop.jpg" alt="" className="card-img-top" />
-          </div>
-        </div>
-        <div className="col-md-6 col-lg-3">
-          <div className="card">
-            <img src="./img/posters/trolls-2-poster-desktop.jpg" alt="" className="card-img-top" />
-          </div>
-        </div>
-        <div>
-          <p>{filmes[0].nome}</p>
-        </div>
-      </div>
-
+      ))}
+    </div>
+</div>
   );
 }
  

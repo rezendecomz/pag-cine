@@ -1,15 +1,17 @@
+import listaCarrousel from './filmes/listaCarrousel'
+
 const Carrousel = () => {
   return (
         <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src="./img/slide-ww84.jpg" className="d-block w-100" alt="WW84" />
+          <img src={ listaCarrousel[0]['img'] } className="d-block w-100" alt={ listaCarrousel[0]['alt']} />
         </div>
         <div className="carousel-item">
-          <img src="./img/slide-trolls2-hoje.jpg" className="d-block w-100" alt="Trolls" />
+          <img src={ listaCarrousel[1]['img'] } className="d-block w-100" alt={ listaCarrousel[1]['alt']} />
         </div>
         <div className="carousel-item">
-          <img src="./img/slide-legadoexplosivo.jpg" className="d-block w-100" alt="Legado Explosivo" />
+          <img src={ listaCarrousel[2]['img'] } className="d-block w-100" alt={ listaCarrousel[2]['alt']} />
         </div>
       </div>
       <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

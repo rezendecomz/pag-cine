@@ -18,6 +18,8 @@ const Navbar = () => {
               <a className="dropdown-item" href="#">Em cartaz</a>
               <a className="dropdown-item" href="#">Em breve</a>
               <a className="dropdown-item" href="#">Em exibição</a>
+              <div class="dropdown-divider"></div>
+              <a className="dropdown-item" href="#">Lista de filmes</a>
             </div>
           </li>
           <li className="nav-item">

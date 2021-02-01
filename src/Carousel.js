@@ -1,11 +1,26 @@
 import listaCarrousel from './filmes/listaCarrousel'
 
+// Alguma coisa no js do bootstrap impede essa função e o 
+// const ehActive = (prop) => {
+//   if (prop['id'] == 1) {
+//     return 'active'
+//   } else {
+//     return ''
+//   }
+// }
+
 const Carrousel = () => {
   return (
         <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
       <div className="carousel-inner">
-        <div className="carousel-item active">
-          <img src={ listaCarrousel[0]['img'] } className="d-block w-100" alt={ listaCarrousel[0]['alt']} />
+      
+      {/* { listaCarrousel.map( filme => (
+        <div className={`carousel-item ${ehActive(filme)}`}>
+          <img src={ filme['img'] } className="d-block w-100" className="nada" alt={ filme['alt']} />
+        </div>
+      )) } */}
+        <div className={`carousel-item active`}>
+          <img src={ listaCarrousel[0]['img'] } className="d-block w-100"  alt={ listaCarrousel[0]['alt']} />
         </div>
         <div className="carousel-item">
           <img src={ listaCarrousel[1]['img'] } className="d-block w-100" alt={ listaCarrousel[1]['alt']} />

@@ -1,6 +1,8 @@
 import Carrousel from './Carousel';
 import Posters from './Posters'
 import { useState } from 'react'; // Testando
+import ListaDeFilmes from './listaDeFilmes';
+
 
 
 const Home = () => {
@@ -21,6 +23,7 @@ const Home = () => {
     <Carrousel />
   <br />
     <Posters />
+    <ListaDeFilmes/>
     {/* <br/> <!-- TESTE -->
     <div className="teste">
     <h3>Testando:</h3>

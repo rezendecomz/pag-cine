@@ -3,17 +3,24 @@ import Home from './Home';
 import Navbar from './Navbar';
 import './css/bootstrap.min.css'
 import './css/style.css'
-import ListaDeFilmes from './listaDeFilmes';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+
 
 function App() {
   return (
+    <Router>
 <div>
+
   <div className="container">
-    <Navbar />
-    <Home />
-    <ListaDeFilmes/>
+      <Navbar />
+  <Switch>
+    <Route path="/">
+      <Home/>
+    </Route>
+    </Switch>
       </div>
 </div>
+    </Router>
   );
 }
 

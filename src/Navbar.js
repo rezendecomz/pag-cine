@@ -19,7 +19,6 @@ const Navbar = () => {
             <div className="dropdown-menu">
               <Link className="dropdown-item" to="/em-cartaz">Em cartaz</Link>
               <a className="dropdown-item" href="#">Em breve</a>
-              <a className="dropdown-item" href="#">Em exibição</a>
               <div class="dropdown-divider"></div>
               <Link className="dropdown-item" to="/em-cartaz">Lista de filmes</Link>
             </div>

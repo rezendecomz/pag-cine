@@ -11,7 +11,14 @@ const ListaDeFilmes = () => {
             </div>
             <div className="col">
                 <div className="card-block px-2 d-flex align-items-start flex-column">
-                    <a href="#" className="btn btn-primary">Onde assistir</a>
+                <div className="row">
+                    <div className="col-md-6">
+                    <a href="#" className="btn btn-primary">Comprar ingressos</a>
+                    </div>
+                     <div className="col-md-6">
+                    <a href="#" className="btn btn-primary">Assistir trailer</a>
+                    </div>
+                </div>
                     <h4 className="card-title mt-2">{filme['nome']}</h4>
                     <p className="card-text">{filme['sinopse']}</p>
                     <p><span>

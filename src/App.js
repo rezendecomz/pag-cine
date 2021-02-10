@@ -4,7 +4,8 @@ import Navbar from './Navbar';
 import './css/bootstrap.min.css'
 import './css/style.css'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-
+import ListaDeFilmes from './listaDeFilmes';
+import Login from './Login'
 
 function App() {
   return (
@@ -12,12 +13,18 @@ function App() {
 <div>
 
   <div className="container">
-      <Navbar />
+  <Navbar />
   <Switch>
-    <Route path="/">
+    <Route exact path="/">
       <Home/>
     </Route>
-    </Switch>
+    <Route exact path="/lista-de-filmes">
+        <ListaDeFilmes/>
+    </Route>
+    <Route exact path="/login">
+      <Login/>
+    </Route>
+  </Switch>
       </div>
 </div>
     </Router>

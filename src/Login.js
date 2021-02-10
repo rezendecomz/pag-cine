@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Login = () => {
   return ( 
   <div className="row justify-content-center">
@@ -31,9 +33,13 @@ const Login = () => {
             <button type="submit" className="btn btn-primary">
               Logar
             </button>
-            <a href="#" className="btn btn-link">
+            <Link href="#" className="btn btn-link">
               Esqueci a senha
-            </a>
+            </Link>
+          </div>
+
+          <div className="col-md-6 offset-md-3">
+            Não tem conta? <span><Link to="/registro">Registre-se</Link></span>
           </div>
           
         </form>

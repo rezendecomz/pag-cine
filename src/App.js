@@ -6,6 +6,7 @@ import './css/style.css'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import ListaDeFilmes from './listaDeFilmes';
 import Login from './Login'
+import Registro from './Registro'
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
     </Route>
     <Route exact path="/login">
       <Login/>
+    </Route>
+        <Route exact path="/registro">
+      <Registro/>
     </Route>
   </Switch>
       </div>

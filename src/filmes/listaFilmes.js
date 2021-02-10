@@ -1,17 +1,30 @@
 // Adicionar path pra simplificar
 
+// Classificaçao indicativa:
+
+/*
+0 - LIVRE
+10
+12
+14
+16
+18
+*/
+
 const filmes = [
   {
     id: 1,
     nome: 'Um tio quase perfeito 2',
     img: './img/posters/um-tio-quase-perfeito-2-poster-desktop.jpg',
-    sinopse: 'Em Um Tio Quase Perfeito 2, longe da vida de trambiques e vivendo em harmonia com sua família, Tony (Marcus Majella) reina soberano no coração de seus sobrinhos. Porém, quando sua irmã começa a namorar Beto (Danton Mello), um homem aparentemente exemplar, ele corre o risco de perder a atenção dos pequenos. Determinado a acabar com a "concorrência", Tony vai fazer de tudo para que Beto não entre oficialmente para a família.'
+    sinopse: 'Em Um Tio Quase Perfeito 2, longe da vida de trambiques e vivendo em harmonia com sua família, Tony (Marcus Majella) reina soberano no coração de seus sobrinhos. Porém, quando sua irmã começa a namorar Beto (Danton Mello), um homem aparentemente exemplar, ele corre o risco de perder a atenção dos pequenos. Determinado a acabar com a "concorrência", Tony vai fazer de tudo para que Beto não entre oficialmente para a família.',
+    classificacao: 0
   },
   {
     id: 2,
     nome: 'Mulher Maravilha, 1984',
     img: './img/posters/mulher-maravilha-1984-poster-desktop.jpg',
-    sinopse: 'Mulher-Maravilha 1984 acompanha Diana Prince/Mulher-Maravilha (Gal Gadot) em 1984, durante a Guerra Fria, entrando em conflito com dois grande inimigos - o empresário de mídia Maxwell Lord (Pedro Pascal) e a amiga que virou inimiga Barbara Minerva/Cheetah (Kristen Wiig) - enquanto se reúne com seu interesse amoroso Steve Trevor (Chris Pine).'
+    sinopse: 'Mulher-Maravilha 1984 acompanha Diana Prince/Mulher-Maravilha (Gal Gadot) em 1984, durante a Guerra Fria, entrando em conflito com dois grande inimigos - o empresário de mídia Maxwell Lord (Pedro Pascal) e a amiga que virou inimiga Barbara Minerva/Cheetah (Kristen Wiig) - enquanto se reúne com seu interesse amoroso Steve Trevor (Chris Pine).',
+    classificacao: 14
   },
   {
     id: 3,

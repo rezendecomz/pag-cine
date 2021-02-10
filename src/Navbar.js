@@ -17,11 +17,11 @@ const Navbar = () => {
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i className="fas fa-film"/>Programação</a>
             <div className="dropdown-menu">
-              <a className="dropdown-item" href="#">Em cartaz</a>
+              <Link className="dropdown-item" to="/em-cartaz">Em cartaz</Link>
               <a className="dropdown-item" href="#">Em breve</a>
               <a className="dropdown-item" href="#">Em exibição</a>
               <div class="dropdown-divider"></div>
-              <Link className="dropdown-item" to="/lista-de-filmes">Lista de filmes</Link>
+              <Link className="dropdown-item" to="/em-cartaz">Lista de filmes</Link>
             </div>
           </li>
           <li className="nav-item">

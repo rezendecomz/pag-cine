@@ -14,6 +14,15 @@ const ListaDeFilmes = () => {
                     <a href="#" className="btn btn-primary">Onde assistir</a>
                     <h4 className="card-title mt-2">{filme['nome']}</h4>
                     <p className="card-text">{filme['sinopse']}</p>
+                    <p><span>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    
+                    
+                    </span></p>
                 </div>
             </div>
         </div>

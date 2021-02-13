@@ -21,7 +21,7 @@ const Registro = () => {
     <div className="card bg-dark">
   <article className="card-body mx-auto" style={{maxWidth: '420px'}}>
     <h4 className="card-title mt-3 text-center">Crie sua conta!</h4>
-    <form>
+    <form action="/login" method='post'>
       <div className="form-group input-group">
         <div className="input-group-prepend">
           <span className="input-group-text"> <i className="fa fa-user" /> </span>
@@ -38,13 +38,14 @@ const Registro = () => {
         <div className="input-group-prepend">
           <span className="input-group-text"> <i className="fa fa-phone" /> </span>
         </div>
-        <select className="custom-select" style={{maxWidth: '120px'}}>
+        {/* <select className="custom-select" style={{maxWidth: '120px'}}>
           <option selected></option>
           <option value={1}>10</option>
           <option value={2}>11</option>
           <option value={3}>12</option>
-        </select>
-        <input name className="form-control" placeholder="Celular" type="text" />
+        </select> */}
+        {/* <input name className="form-control" placeholder="Celular" type="text" /> */}
+        <input type="tel" class="form-control" id="tel" name="tel" maxlength="15" required/>
       </div> {/* form-group// */}
 
 

@@ -33,7 +33,7 @@ const Login = () => {
             <button type="submit" className="btn btn-primary">
               Logar
             </button>
-            <Link href="#" className="btn btn-link">
+            <Link to="/esqueci" className="btn btn-link">
               Esqueci a senha
             </Link>
           </div>

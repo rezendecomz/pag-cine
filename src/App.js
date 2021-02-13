@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import ListaDeFilmes from './EmCartaz';
 import Login from './Login'
 import Registro from './Registro'
+import Esqueci from './Esqueci'
 
 function App() {
   return (
@@ -28,8 +29,11 @@ function App() {
     <Route exact path="/login">
       <Login/>
     </Route>
-        <Route exact path="/registro">
+    <Route exact path="/registro">
       <Registro/>
+    </Route>
+    <Route exact path="/esqueci">
+      <Esqueci/>
     </Route>
   </Switch>
       </div>

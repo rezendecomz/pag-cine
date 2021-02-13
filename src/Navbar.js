@@ -1,6 +1,34 @@
 import { Link } from 'react-router-dom' // Link to
 
+// const Navbar = () => {
+//   useEffect(() => {
+//   const script = document.createElement('script');
+
+//   script.src = "/scripts/cidade-estados-brasil.min.js";
+//   script.async = true;
+
+//   document.body.appendChild(script);
+
+//   return () => {
+//     document.body.removeChild(script);
+//   }
+// }, []);
+
 const Navbar = () => {
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    console.log("Geolocation is not supported by this browser.");
+  }
+}
+
+function showPosition(position) {
+  console.log(position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude);
+}
+
   return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <Link className="navbar-brand" to="/">PagCine</Link>
@@ -10,7 +38,7 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarColor01">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
-            <a className="nav-link" href="#"><i className="fas fa-map-marker-alt fa-lg" />São Paulo
+            <a className="nav-link localiza" href="#" onClick={getLocation()}><i className="fas fa-map-marker-alt fa-lg" />São Paulo
               <span className="sr-only">(current)</span>
             </a>
           </li>

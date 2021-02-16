@@ -7,7 +7,7 @@ const Login = () => {
     <div className="card">
       <div className="card-header">Logar</div>
       <div className="card-body">
-        <form action method>
+        <form>
           <div className="form-group row justify-content-center">
             <div className="col-md-6">
               <input type="text" id="email_address" className="form-control" name="email-address" required autofocus placeholder="E-Mail"/>
@@ -30,9 +30,7 @@ const Login = () => {
           </div>
 
           <div className="col-md-6 offset-md-3">
-            <button type="submit" className="btn btn-primary">
-              Logar
-            </button>
+            <Link to="./minhaConta"><button className="btn btn-primary">Logar</button></Link>
             <Link to="/esqueci" className="btn btn-link">
               Esqueci a senha
             </Link>

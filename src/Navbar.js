@@ -1,18 +1,6 @@
 import { Link } from 'react-router-dom' // Link to
-
-// const Navbar = () => {
-//   useEffect(() => {
-//   const script = document.createElement('script');
-
-//   script.src = "/scripts/cidade-estados-brasil.min.js";
-//   script.async = true;
-
-//   document.body.appendChild(script);
-
-//   return () => {
-//     document.body.removeChild(script);
-//   }
-// }, []);
+import User from './status';
+import { useState, useEffect } from 'react';
 
 const Navbar = () => {
 
@@ -60,7 +48,7 @@ function showPosition(position) {
           <button className="btn btn-secondary my-2 my-sm-0" type="submit"><i className="fas fa-search" /></button>
         </form>
         <li className="nav-item">
-          <Link className="nav-link" to="/login"><i className="fas fa-user" />Login</Link>
+          <Link className="nav-link" to="/login"><i className="fas fa-user" /><span id='login'>{User.usuario}</span> </Link>
         </li>
       </div>
     </nav>

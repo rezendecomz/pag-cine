@@ -8,8 +8,10 @@ import ListaDeFilmes from './EmCartaz';
 import Login from './Login'
 import Registro from './Registro'
 import Esqueci from './Esqueci'
+import MinhaConta from './MinhaConta'
 
 function App() {
+
   return (
     <Router>
 <div>
@@ -28,6 +30,9 @@ function App() {
     </Route>
     <Route exact path="/login">
       <Login/>
+    </Route>
+    <Route exact path="/minhaConta">
+      <MinhaConta/>
     </Route>
     <Route exact path="/registro">
       <Registro/>

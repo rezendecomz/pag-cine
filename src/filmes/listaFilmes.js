@@ -57,6 +57,6 @@ const filmes = [
     idioma: idioma.leg
   },
 ]
-console.log(filmes[0].classificacao)
+// console.log(filmes[0].classificacao)
 
 module.exports = filmes

@@ -6,11 +6,7 @@ const MinhaConta = () => {
   return ( 
     <div>
     {useEffect(() => {
-      console.log(User.usuario);
-      User.trocaStatus();
-            console.log(User.usuario);
-
-      {/* document.getElementById('login').innerText = usuario;  */}
+      document.getElementById('login').innerText = 'Bem-vindo, Fulano'; 
     })}
     <h1>Hello</h1>
     </div>

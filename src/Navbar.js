@@ -48,7 +48,7 @@ function showPosition(position) {
           <button className="btn btn-secondary my-2 my-sm-0" type="submit"><i className="fas fa-search" /></button>
         </form>
         <li className="nav-item">
-          <Link className="nav-link" to="/login"><i className="fas fa-user" /><span id='login'>{User.usuario}</span> </Link>
+          <Link className="nav-link" to="/login"><i className="fas fa-user" id='trocalink'/><span id='login'>{User.usuario}</span> </Link>
         </li>
       </div>
     </nav>

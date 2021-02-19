@@ -39,6 +39,7 @@ const MinhaConta = () => {
                     <p className="card-text"><i class="fas fa-video fa-lg"></i>Sala 2</p>
                     <p className="card-text"><i class="fas fa-calendar-alt fa-lg"></i>22/02/2021 - 19h30</p>
                     <p className="card-text"><i class="fas fa-couch fa-lg"></i> H 13, H 14, H 15</p>
+                    <p className="card-text"><i class="far fa-id-card fa-lg"></i>  {filme['classificacao']}</p>
                 </div>
             </div>
             <div className="col">

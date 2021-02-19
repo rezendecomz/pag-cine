@@ -27,23 +27,31 @@ const MinhaConta = () => {
     <div className='listaDeFilme mt-4'>
       {filmes.map( filme => (
 <div class="card mt-3">
-                <div className="row no-gutters mt-4">
+                <div className="row no-gutters">
             <div className="col-auto">
                 <img src={filme['img']} className="img-fluid" alt=""/>
             </div>
-            <div className="col">
+            <div className="col" style={{backgroundColor:'rgba(0, 0, 0, 0.1)'}}>
                 <div className="card-block px-2 d-flex align-items-start flex-column">
 
                     <h4 className="card-title mt-2">{filme['nome']}</h4>
                     <p className="card-text"><i className="fas fa-map-marker-alt fa-lg" />Cine Belas Artes, São Paulo</p>
-                    <p className="card-text"><i class="fas fa-couch fa-lg"></i> H 13, H 14, H 15</p>
+                    <p className="card-text"><i class="fas fa-video fa-lg"></i>Sala 2</p>
                     <p className="card-text"><i class="fas fa-calendar-alt fa-lg"></i>22/02/2021 - 19h30</p>
+                    <p className="card-text"><i class="fas fa-couch fa-lg"></i> H 13, H 14, H 15</p>
+                </div>
+            </div>
+            <div className="col">
+                <div className="card-block px-2 d-flex align-items-start flex-column">
+                    <h4 className="card-title mt-2">Dados do pagamento:</h4>
+                    <p className="card-text"><i class="fas fa-calendar-alt fa-lg"></i>03/02/2021</p>
+                    <p className="card-text"><i class="fas fa-credit-card fa-lg"></i>Crédito -  MasterCard</p>
                     <p className="card-text"><i class="fas fa-dollar-sign fa-lg"></i> Total: R$ 60,50</p>
                     <p className="card-text"><i class="far fa-sticky-note fa-lg"></i>  Pedido: 654654645</p>
 
                 </div>
             </div>
-            <div className="col">
+            <div className="col-auto">
               <img src="./img/qrExample.png" alt="" srcset=""/>
             </div>
         </div>

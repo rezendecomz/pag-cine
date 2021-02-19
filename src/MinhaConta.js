@@ -25,41 +25,33 @@ const MinhaConta = () => {
 
     
     <div className='listaDeFilme mt-4'>
-<div class="card">
       {filmes.map( filme => (
+<div class="card mt-3">
                 <div className="row no-gutters mt-4">
             <div className="col-auto">
                 <img src={filme['img']} className="img-fluid" alt=""/>
             </div>
             <div className="col">
                 <div className="card-block px-2 d-flex align-items-start flex-column">
-                <div className="row">
-                    <div className="col-md-6">
-                    <a href="#" className="btn btn-primary">Comprar ingressos</a>
-                    </div>
-                     <div className="col-md-6">
-                    <a href="#" className="btn btn-primary">Assistir trailer</a>
-                    </div>
-                </div>
+
                     <h4 className="card-title mt-2">{filme['nome']}</h4>
-                    <p className="card-text">{filme['sinopse']}</p>
-                    <p><span>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    
-                    
-                    </span></p>
+                    <p className="card-text"><i className="fas fa-map-marker-alt fa-lg" />Cine Belas Artes, São Paulo</p>
+                    <p className="card-text"><i class="fas fa-couch fa-lg"></i> H 13, H 14, H 15</p>
+                    <p className="card-text"><i class="fas fa-calendar-alt fa-lg"></i>22/02/2021 - 19h30</p>
+                    <p className="card-text"><i class="fas fa-dollar-sign fa-lg"></i> Total: R$ 60,50</p>
+                    <p className="card-text"><i class="far fa-sticky-note fa-lg"></i>  Pedido: 654654645</p>
+
                 </div>
             </div>
+            <div className="col">
+              <img src="./img/qrExample.png" alt="" srcset=""/>
+            </div>
         </div>
+    </div>
       )
 
       )}
 
-    </div>
     </div>
 
 </div>

@@ -36,7 +36,7 @@ const filmes = [
     id: 3,
     nome: 'O tempo com você',
     img: './img/posters/o-tempo-com-voce-poster-desktop.jpg',
-    sinopse: 'Durante o verão, Hodaka (Kotaro Daigo) foge de sua casa em uma ilha periférica para chegar a Tóquio. Ele não tem dinheiro mas, depois de muitos dias, acaba encontrando trabalho como escritor freelance para uma revista duvidosa. Um dia, porém, Hodaka conhece uma garota no meio da agitação da cidade grande. Hina (Nana Mori) é uma garota alegre que vive sozinha com seu irmão mais novo, devido a uma série de circunstâncias. Ela tem um poder que deixa Hodaka impressionado: Hina pode controlar o tempo. Do mesmo diretor de Your Name, O TEMPO COM VOCÊ ganhou prêmios em diversos festivais, como o Asia Pacific Screen Awards, o Animation is Film e o Scotland Loves Anime em 2019, além de indicações no Satellite Awards e Annie Awards de 2020. Classificação indicativa 12 anos, contém drogas lícitas e violência.',
+    sinopse: 'Durante o verão, Hodaka (Kotaro Daigo) foge de sua casa em uma ilha periférica para chegar a Tóquio. Ele não tem dinheiro mas, depois de muitos dias, acaba encontrando trabalho como escritor freelance para uma revista duvidosa. Um dia, porém, Hodaka conhece uma garota no meio da agitação da cidade grande. Hina (Nana Mori) é uma garota alegre que vive sozinha com seu irmão mais novo, devido a uma série de circunstâncias.',
     classificacao: idade[12],
     idioma: idioma.dub
   },

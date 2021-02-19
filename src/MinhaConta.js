@@ -31,7 +31,7 @@ const MinhaConta = () => {
             <div className="col-auto">
                 <img src={filme['img']} className="img-fluid" alt=""/>
             </div>
-            <div className="col" style={{backgroundColor:'rgba(0, 0, 0, 0.1)'}}>
+            <div className="col ml-2" style={{backgroundColor:'rgba(0, 0, 0, 0.1)'}}>
                 <div className="card-block px-2 d-flex align-items-start flex-column">
 
                     <h4 className="card-title mt-2">{filme['nome']}</h4>

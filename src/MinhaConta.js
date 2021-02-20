@@ -18,7 +18,7 @@ const MinhaConta = () => {
   </div>
   <div className="row">
     <div className="col d-flex justify-content-center align-items-center bg-primary" style={{height: '40px'}}>
-      <p style={{color: 'white'}} className='mt-3'>Dados pessoais - Formas de pagamento - Logout</p>
+      <p style={{color: 'white'}} className='mt-3'><a href="">Dados pessoais</a> - <a href="">Formas de pagamento</a> - <a href="">Logout</a></p>
     </div>
   </div>
 

@@ -19,6 +19,7 @@ const Trailer = () => {
                 <div className="card-block px-2 d-flex align-items-start flex-column">
 
                     <h4 className="card-title mt-2">{filmes[0]['nome']}</h4>
+                    <p>Cinema mais próximo:</p>
                     <p className="card-text"><i className="fas fa-map-marker-alt fa-lg" />Cine Belas Artes, São Paulo</p>
                     <p>Próxima sessão:</p>
                     <p className="card-text"><i class="fas fa-calendar-alt fa-lg"></i>22/02/2021 - 19h30</p>

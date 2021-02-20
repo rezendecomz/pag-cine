@@ -31,7 +31,7 @@ const MinhaConta = () => {
             <div className="col-auto">
                 <img src={filme['img']} className="img-fluid" alt=""/>
             </div>
-            <div className="col ml-2" style={{backgroundColor:'rgba(0, 0, 0, 0.1)'}}>
+            <div className="col ml-2 mb-2" style={{backgroundColor:'rgba(0, 0, 0, 0.1)'}}>
                 <div className="card-block px-2 d-flex align-items-start flex-column">
 
                     <h4 className="card-title mt-2">{filme['nome']}</h4>
@@ -40,6 +40,7 @@ const MinhaConta = () => {
                     <p className="card-text"><i class="fas fa-calendar-alt fa-lg"></i>22/02/2021 - 19h30</p>
                     <p className="card-text"><i class="fas fa-couch fa-lg"></i> H 13, H 14, H 15</p>
                     <p className="card-text"><i class="far fa-id-card fa-lg"></i>  {filme['classificacao']}</p>
+                    <p className="card-text"><i class="fas fa-language fa-lg"></i> {filme['idioma']}</p>
                 </div>
             </div>
             <div className="col">

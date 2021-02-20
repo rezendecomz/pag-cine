@@ -11,6 +11,7 @@ import Esqueci from './Esqueci'
 import MinhaConta from './MinhaConta'
 import Trailer from './filmes/trailer'
 import Ingressos from './Ingressos'
+import Programacao from './Programacao'
 
 function App() {
 
@@ -35,6 +36,9 @@ function App() {
     </Route>
     <Route exact path="/ingressos/54321">
         <Ingressos/>
+    </Route>
+    <Route exact path="/programacao">
+        <Programacao/>
     </Route>
     <Route exact path="/login">
       <Login/>

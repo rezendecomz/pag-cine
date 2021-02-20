@@ -25,7 +25,7 @@ const Trailer = () => {
                     <p className="card-text"><i class="fas fa-calendar-alt fa-lg"></i>22/02/2021 - 19h30</p>
                     <p className="card-text"><i class="fas fa-video fa-lg"></i>Comum, IMAX, 3D</p>
                     <p>Ingressos a partir de:</p>
-                    <p className="card-text"><i class="fas fa-dollar-sign fa-lg"></i> Total: R$ 60,50</p>
+                    <p className="card-text"><i class="fas fa-dollar-sign fa-lg"></i> Total: R$ 27,50</p>
                 </div>
             </div>
             <div className="col">

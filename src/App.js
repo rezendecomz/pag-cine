@@ -10,6 +10,7 @@ import Registro from './Registro'
 import Esqueci from './Esqueci'
 import MinhaConta from './MinhaConta'
 import Trailer from './filmes/trailer'
+import Ingressos from './Ingressos'
 
 function App() {
 
@@ -31,6 +32,9 @@ function App() {
     </Route>
     <Route exact path="/trailers/54321">
         <Trailer/>
+    </Route>
+    <Route exact path="/ingressos/54321">
+        <Ingressos/>
     </Route>
     <Route exact path="/login">
       <Login/>

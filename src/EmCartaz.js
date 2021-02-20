@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import filmes from './filmes/listaFilmes'
 
 const ListaDeFilmes = () => {
@@ -13,10 +14,10 @@ const ListaDeFilmes = () => {
                 <div className="card-block px-2 d-flex align-items-start flex-column">
                 <div className="row mt-3">
                     <div className="col">
-                    <a href="#" className="btn btn-primary">Ingressos</a>
+                    <Link to="/ingressos/54321" className="btn btn-primary">Ingressos</Link>
                     </div>
                      <div className="col">
-                    <a href="#" className="btn btn-primary">Trailer</a>
+                    <Link to="/trailers/54321" className="btn btn-primary">Trailer</Link>
                     </div>
                 </div>
                     <h4 className="card-title mt-2">{filme['nome']}</h4>

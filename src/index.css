@@ -11,3 +11,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.disponivel {        
+  background-color: green;
+  border-radius: 50%;
+  float: left;     
+  width:30px;
+  height:30px;
+  margin-left: 55px;  
+  margin-bottom: 2;
+  text-align: center;
+  vertical-align: middle;  
+ }
+ 
+ .ocupada {   
+  background-color: rgb(131, 0, 0);
+  border-radius: 50%;
+  float: left;     
+  width:30px;
+  height:30px;  
+  margin-left: 55px;  
+  margin-bottom: 2;
+  text-align: right;  
+  vertical-align: middle;  
+ }
+ 
+ .poltronas {
+  display: inline-block;
+  position: relative;  
+  border-radius: 50%;
+  width:60px;
+  height:60px;
+  margin: auto;
+  margin-bottom: 2px;
+  text-align: center;
+  vertical-align: middle;  
+ }
+
+ #tela {
+  width: 100%;
+  border-bottom: 3px solid #6572e7;
+  text-align: center;  
+  vertical-align: middle;  
+}

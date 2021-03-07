@@ -10,8 +10,9 @@ import Registro from './Registro'
 import Esqueci from './Esqueci'
 import MinhaConta from './MinhaConta'
 import Trailer from './filmes/trailer'
-import Ingressos from './Ingressos'
 import Programacao from './Programacao'
+import Cinema from './components/Cinema'
+import { chairs } from './utils';
 
 function App() {
 
@@ -35,7 +36,7 @@ function App() {
         <Trailer/>
     </Route>
     <Route exact path="/ingressos/54321">
-        <Ingressos/>
+        <Cinema chairs={chairs} />        
     </Route>
     <Route exact path="/programacao">
         <Programacao/>

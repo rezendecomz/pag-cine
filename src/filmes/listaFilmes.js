@@ -58,5 +58,4 @@ const filmes = [
   },
 ]
 // console.log(filmes[0].classificacao)
-
 module.exports = filmes

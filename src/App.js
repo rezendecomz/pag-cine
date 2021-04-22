@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import './css/bootstrap.min.css'
 import './css/style.css'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import ListaDeFilmes from './EmCartaz';
+import ListaDeFilmes from './ListaDeFilmes';
 import Login from './Login'
 import Registro from './Registro'
 import Esqueci from './Esqueci'

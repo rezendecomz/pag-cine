@@ -15,10 +15,10 @@ const ListaComp = ({ filmes }) => {
               <div className="card-block px-2 d-flex align-items-start flex-column">
                 <div className="row mt-3">
                   <div className="col">
-                    <Link to="/ingressos/54321" className="btn btn-primary">Ingressos</Link>
+                    <Link to={"/ingressos/" + filme.id} className="btn btn-primary">Ingressos</Link>
                   </div>
                   <div className="col">
-                    <Link to="/trailers/54321" className="btn btn-primary">Trailer</Link>
+                    <Link to={"/trailers/" + filme.id} className="btn btn-primary">Trailer</Link>
                   </div>
                 </div>
                 <h4 className="card-title mt-2">{filme['nome']}</h4>
@@ -29,7 +29,7 @@ const ListaComp = ({ filmes }) => {
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="far fa-star"></i>
-                  <p>Classificação: {filme['classificacao']}</p>
+                  <p>Classificação indicativa: {filme['classificacao']}</p>
 
 
                 </span></p>

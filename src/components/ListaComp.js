@@ -9,7 +9,7 @@ const ListaComp = ({ filmes }) => {
         <div class="card mt-3" key={filme.id}>
           <div className="row no-gutters">
             <div className="col-auto">
-              <img src={filme['img']} className="img-fluid" alt="" />
+              <img src={filme.poster_url} className="img-fluid" alt="" />
             </div>
             <div className="col ml-2">
               <div className="card-block px-2 d-flex align-items-start flex-column">

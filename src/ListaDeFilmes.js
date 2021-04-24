@@ -11,7 +11,7 @@ const ListaDeFilmes = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch('http://localhost:3030/listaFilmes')
+        fetch('http://localhost:3333/listaFilmes')
             .then(res => {
                 if (!res.ok) {
                     throw Error('Problema com conexão com o servidor'); // mensagem do erro

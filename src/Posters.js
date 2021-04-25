@@ -1,26 +1,39 @@
-import filmes from './filmes/listaFilmes'
-import { useState } from 'react';
-import { Link } from 'react-router-dom' // Link to
-
-// Adicionar tooltips
-
+import { useState, useEffect } from 'react';
+import PosterComp from './components/PosterComp'
 const Posters = () => {
-  const [ listaFilmes, setListaFilmes ] = useState(filmes.slice(0, 4))
-  console.log(listaFilmes);
-  console.log(filmes)
+  const [filmes, setFilmes] = useState(null)
+
+  const [isPending, setIsPending] = useState(true)
+
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch(`http://localhost:3333/ultimos/4`)
+      .then(res => {
+        if (!res.ok) {
+          throw Error('Problema com conexão com o servidor'); // mensagem do erro
+        }
+        return res.json()
+      })
+      .then((data) => {
+        setFilmes(data)
+        setIsPending(false)
+      })
+      .catch(err => {
+        setIsPending(true)
+        setError(err.message)
+      })
+  }, [])
+
   return (
-    <div>
-      <div className="row">
-      { listaFilmes.map( filme => (
-        <div className="col-md-6 col-lg-3" id={filme['id']}>
-          <div className="card">
-            <Link to="/trailers/54321"><img src={filme['img']} alt="" className="card-img-top" /></Link>
-          </div>
-        </div>
-      ))}
-    </div>
-</div>
+    <>
+      {/* {console.log(filmes)} */}
+      {error && <div>{error}</div>}
+      {isPending && <div>Carregando...</div>}
+      {!isPending && <PosterComp filmes={filmes} />}
+
+    </>
   );
 }
- 
+
 export default Posters;

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-// import filmes from "../filmes/listaFilmes"
 
 const ListaComp = ({ filmes }) => {
   return (

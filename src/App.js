@@ -12,6 +12,7 @@ import Trailer from './filmes/trailer'
 import Programacao from './Programacao'
 import Cinema from './components/Cinema'
 import { chairs } from './utils';
+import TrailersAll from './filmes/trailersAll';
 
 function App() {
 
@@ -30,6 +31,9 @@ function App() {
             </Route>
             <Route exact path="/lista-de-filmes">
               <ListaDeFilmes />
+            </Route>
+            <Route exact path="/trailers/">
+              <TrailersAll />
             </Route>
             <Route exact path="/trailers/:id">
               <Trailer />

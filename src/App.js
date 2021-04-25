@@ -31,7 +31,7 @@ function App() {
             <Route exact path="/lista-de-filmes">
               <ListaDeFilmes />
             </Route>
-            <Route exact path="/trailers/54321">
+            <Route exact path="/trailers/:id">
               <Trailer />
             </Route>
             <Route exact path="/ingressos/54321">

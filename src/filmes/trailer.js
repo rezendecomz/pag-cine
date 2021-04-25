@@ -1,5 +1,6 @@
 // import { Link } from "react-router-dom";
 import { useState, useEffect } from "react"
+import { useParams } from "react-router"
 import TrailerComp from '../components/TrailerComp'
 // import filmes from './listaFilmes';
 
@@ -10,8 +11,10 @@ const Trailer = () => {
 
     const [error, setError] = useState(null);
 
+    const { id } = useParams();
+
     useEffect(() => {
-        fetch('http://localhost:3333/filme/1')
+        fetch(`http://localhost:3333/filme/${id}`)
             .then(res => {
                 if (!res.ok) {
                     throw Error('Problema com conexão com o servidor'); // mensagem do erro
@@ -19,14 +22,12 @@ const Trailer = () => {
                 return res.json()
             })
             .then((data) => {
-                // console.log(data)
                 setFilme(data)
                 setIsPending(false)
             })
             .catch(err => {
                 setIsPending(true)
                 setError(err.message)
-                // setError(null)
             })
     }, [])
 

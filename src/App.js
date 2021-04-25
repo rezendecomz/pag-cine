@@ -38,7 +38,7 @@ function App() {
             <Route exact path="/trailers/:id">
               <Trailer />
             </Route>
-            <Route exact path="/ingressos/54321">
+            <Route exact path="/ingressos/:id">
               <Cinema chairs={chairs} />
             </Route>
             <Route exact path="/programacao">

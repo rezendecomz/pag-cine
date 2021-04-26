@@ -14,6 +14,7 @@ import Cinema from './components/Cinema'
 import { chairs } from './utils';
 import TrailersAll from './filmes/trailersAll';
 
+
 function App() {
 
   return (

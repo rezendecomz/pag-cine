@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { Enzima } from 'enzyme';
 
 import Zoom from './Zoom';
 
@@ -13,7 +13,7 @@ describe('Zoom', () => {
       zoomOut: jest.fn()
     };
 
-    component = shallow(<Zoom {...props} />);
+    component = Enzima(<Zoom {...props} />);
   });
 
   it('should call zoom out', () => {

@@ -1,9 +1,9 @@
-// import Carrousel from './Carousel';
+import Carrousel from './Carousel';
 import Posters from './Posters'
-import { useState } from 'react'; // Testando
-import { SliderData } from '../src/components/carousel/SliderData'
-import ImageSlider from '../src/components/carousel/ImageSlider'
-import '../src/components/carousel/carousel.css'
+//import { useState } from 'react'; // Testando
+// import { SliderData } from '../src/components/carousel/SliderData'
+// import ImageSlider from '../src/components/carousel/ImageSlider'
+//import '../src/components/carousel/carousel.css'
 
 const Home = () => {
   // Testando
@@ -18,16 +18,16 @@ const Home = () => {
 
   return (
     <div className="home">
-      {/* <Carrousel /> */}
-        {/* <br /> */}
-      <Posters />
+      <Carrousel /> 
+         <br /> 
+       <Posters /> 
       {/* <br/> <!-- TESTE -->
       <div className="teste">
       <h3>Testando:</h3>
       <p>{ nome } tem { idade } anos</p>
       <button onClick={handleClick}>Troca nome</button>
       </div> */}
-      <ImageSlider slides={SliderData}></ImageSlider>           
+      {/* <ImageSlider slides={SliderData}></ImageSlider>            */}
 </div>
   );
 }

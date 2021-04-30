@@ -1,18 +1,18 @@
 const listaCarrousel = [
   {
     id: 1,
-    img: "./img/carousel/slide-ww84.jpg",
-    alt: "WW84"
+    img: "./img/carousel/slide-gvsk.jpg",
+    alt: "Godzilla vs. Kong"
   },
   {
     id: 2,
-    img: "./img/carousel/slide-trolls2-hoje.jpg",
-    alt: "Trolls 2"
+    img: "./img/carousel/slide-minari.jpg",
+    alt: "Minari - Em Busca da Felicidade"
   },
   {
     id: 3,
-    img: "./img/carousel/slide-legadoexplosivo.jpg",
-    alt: "Legado Explosivo"
+    img: "./img/carousel/slide-monster-hunter.jpg",
+    alt: "Monster Hunter"
   }
 ]
 

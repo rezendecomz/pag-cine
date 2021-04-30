@@ -13,7 +13,7 @@ import React, { useRef, useEffect } from "react";
                 description: "Ingresso",
                 amount: {
                   currency_code: "BRL",
-                  value: 5.00,
+                  value: 9.50,
                 },
               },
             ],

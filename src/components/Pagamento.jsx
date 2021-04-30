@@ -11,19 +11,21 @@ const Pagamento = ({precoUn, qtde, money = 0 }) => {
       <p className={Pag.money}> 
        Preço Un: {precoUn.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} | Qtde: {qtde}
        </p>  
-      {        
+        {        
        checkout ? (
-        <PayPal />
-      ) : (
-        <button
+        <PayPal  />
+      ) :  (
+        <button         
           onClick={() => {
-            setCheckOut(true);            
+            setCheckOut(true);                                
           }}
         >  {PayPal.precoUn}
-          Pagar {money.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}           
+          Pagar {money.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}                   
         </button>       
       ) }
-      <Qr />
+       this.state.Qr  && <Qr/> 
+      
+            
     </div>
   );
 }

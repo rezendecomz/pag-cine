@@ -4,12 +4,11 @@ import Zoom from "./Zoom";
 import Pagamento from "./Pagamento";
 import { rows } from "../utils";
 import cine from "./Cinema.module.css";
-// import listaFilmes from "../filmes/listaFilmes";
 
-const valorIngresso  = 30.50;
-const filmeEscolhido = 'Título'//listaFilmes.map( filme => (filme['nome']));
+const valorIngresso  = 9.50;
+const filmeEscolhido = 'Título'
                               
-const qtdePoltronas  = 80;
+const qtdePoltronas  = 72;
 
 class Cinema extends React.Component {
   state = {
@@ -83,5 +82,5 @@ class Cinema extends React.Component {
     );
   }
 }
-// window.location.reload();
+
 export default Cinema;

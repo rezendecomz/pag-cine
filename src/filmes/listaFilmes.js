@@ -47,15 +47,7 @@ const filmes = [
     sinopse: 'Em Trolls 2, a rainha Poppy (Anna Kendrick) e Branch (Justin Timberlake) fazem uma descoberta surpreendente: há outros mundos Troll além do seu, e suas diferenças criam grandes confrontos entre essas diversas tribos. Quando uma ameaça misteriosa coloca todos os Trolls do país em perigo, Poppy, Branch e seu grupo de amigos devem embarcar em uma jornada épica para criar harmonia entre os Trolls rivais e uní-los contra um mal maior.',
     classificacao: idade[0],
     idioma: idioma.dub
-  },
-  {
-    id: 5,
-    nome: 'Um outro filme',
-    img: './img/posters/trolls-2-poster-desktop.jpg',
-    sinopse: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa optio accusantium, nisi reprehenderit deserunt perspiciatis libero alias quo molestias assumenda!',
-    classificacao: idade[18],
-    idioma: idioma.leg
-  },
+  }
 ]
 // console.log(filmes[0].classificacao)
 module.exports = filmes

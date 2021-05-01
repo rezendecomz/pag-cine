@@ -13,6 +13,7 @@ import Programacao from './Programacao'
 import Cinema from './components/Cinema'
 import { chairs } from './utils';
 import TrailersAll from './filmes/trailersAll';
+import Ingresso from './components/IngressoQrCode';
 
 
 function App() {
@@ -56,6 +57,9 @@ function App() {
             </Route>
             <Route exact path="/esqueci">
               <Esqueci />
+            </Route>
+            <Route exact path="/Ingresso">
+              <Ingresso />
             </Route>
           </Switch>
         </div>

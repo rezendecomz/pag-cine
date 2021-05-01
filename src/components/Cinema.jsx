@@ -16,13 +16,12 @@ class Cinema extends React.Component {
     selection: 0,
     scale: 0.8
   };
-
+    
   toggleChair = chair => {        
     let { chairs, selection } = this.state;
     const linha = chair.pos[0];
     const coluna = chair.pos[1];
-    const currentItem = chairs[linha][coluna];
-
+    const currentItem = chairs[linha][coluna];    
     const item = { ...currentItem, selecting: !currentItem.selecting };
     if (item.selecting) {
       selection += 1;      

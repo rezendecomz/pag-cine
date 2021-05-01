@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { enzima } from 'enzyme';
 
 import Pagamento from './Pagamento';
 
@@ -9,19 +9,19 @@ describe('Pagamento', () => {
 
   beforeEach(() => {
     props = {
-      money: 70000
+      money: 10000
     };
 
-    component = shallow(<Pagamento {...props} />);
+    component = enzima(<Pagamento {...props} />);
   });
 
-  it('should show correct money format', () => {
-    expect(component.find('p').at(2).text()).toEqual('70,000 VND');
+  it('Formato da Moeda', () => {
+    expect(component.find('p').at(2).text()).toEqual('10.000 BRL');
   });
 
-  it('should render when money is undefined', () => {
+  it('Moeda definida', () => {
     component.setProps({ money: undefined })
-    expect(component.find('p').at(2).text()).toEqual('0 VND');
+    expect(component.find('p').at(2).text()).toEqual('0 BRL');
   });
 
 });

@@ -13,26 +13,29 @@ import React, { useRef, useEffect } from "react";
                 description: "Ingresso",
                 amount: {
                   currency_code: "BRL",
-                  value: 9.50,
+                  value: 5.00,
+
                 },
               },
             ],
           });
         },
-        onApprove: async (data, actions) => {
-          const order = await actions.order.capture();           
-          console.log(order);
+        onApprove: async (data, actions) => {          
+          const order = await actions.order.capture();                      
+          console.log(order.value);
+          window.location.href = "http://localhost:3000/Ingresso";   
+                   
         },
         onError: (err) => {
-          console.log(err);
+          console.log(err);          
         },
       })
-      .render(paypal.current);
+      .render(paypal.current);      
   }, []);
 
   return (
-    <div>
-      <div ref={paypal}></div>
+    <div>  
+      <div ref={paypal} ></div>      
     </div>
   );
 }

@@ -20,7 +20,7 @@ const TrailerComp = ({ filme }) => {
                 <p>Cinema mais próximo:</p>
                 <p className="card-text"><i className="fas fa-map-marker-alt fa-lg" />Cine Belas Artes, São Paulo</p>
                 <p>Próxima sessão:</p>
-                <p className="card-text"><i class="fas fa-calendar-alt fa-lg"></i>22/02/2021 - 19h30</p>
+                <p className="card-text"><i class="fas fa-calendar-alt fa-lg"></i>03/05/2021 - 21h45</p>
                 <p className="card-text"><i class="fas fa-video fa-lg"></i>Comum, IMAX, 3D</p>
                 <p>Ingressos a partir de:</p>
                 <p className="card-text"><i class="fas fa-dollar-sign fa-lg"></i> Total: R$ 27,50</p>

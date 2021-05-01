@@ -6,7 +6,7 @@ import { rows } from "../utils";
 import cine from "./Cinema.module.css";
 
 const valorIngresso  = 9.50;
-const filmeEscolhido = 'Título'
+const filmeEscolhido = 'Minari'
                               
 const qtdePoltronas  = 72;
 

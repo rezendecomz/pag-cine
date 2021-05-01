@@ -5,7 +5,7 @@ import Pagamento from "./Pagamento";
 import { rows } from "../utils";
 import cine from "./Cinema.module.css";
 
-const valorIngresso  = 9.50;
+const valorIngresso  = 27.50;
 const filmeEscolhido = 'Minari'
                               
 const qtdePoltronas  = 72;

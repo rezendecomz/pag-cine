@@ -20,7 +20,7 @@ const TrailerComp = ({ filme }) => {
                 <p>Cinema mais próximo:</p>
                 <p className="card-text"><i className="fas fa-map-marker-alt fa-lg" />Cine Belas Artes, São Paulo</p>
                 <p>Próxima sessão:</p>
-                <p className="card-text"><i class="fas fa-calendar-alt fa-lg"></i>03/05/2021 - 21h45</p>
+                <p className="card-text"><i class="fas fa-calendar-alt fa-lg"></i>03/05/2021 - 21h45  - <span><a href="http://">Outras sessões</a></span></p>
                 <p className="card-text"><i class="fas fa-video fa-lg"></i>Comum, IMAX, 3D</p>
                 <p>Ingressos a partir de:</p>
                 <p className="card-text"><i class="fas fa-dollar-sign fa-lg"></i> Total: R$ 27,50</p>
@@ -29,8 +29,9 @@ const TrailerComp = ({ filme }) => {
             <div className="col">
               <div className="card-block px-2 d-flex align-items-start flex-column">
                 <h4 className="card-title mt-2">Sinopse</h4>
-                <p className="card-text">{filme.['sinopse']}</p>
-                <p className="card-text"><i class="far fa-id-card fa-lg"></i>   {filme.classificacao}</p>
+                <p className="card-text">{filme.sinopse}</p>
+                <h5 className="card-title mt-2">Classificação:</h5>
+                <p className="card-text"><i class="far fa-id-card fa-lg"></i>   {filme.classificacao} anos</p>
                 <Link to={"/ingressos/" + filme.id} className="btn btn-primary mt-3">Ingressos</Link>
 
 

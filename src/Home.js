@@ -1,5 +1,6 @@
 import Carrousel from './Carousel';
 import Posters from './Posters'
+// import {useEffect} from 'react'
 //import { useState } from 'react'; // Testando
 // import { SliderData } from '../src/components/carousel/SliderData'
 // import ImageSlider from '../src/components/carousel/ImageSlider'
@@ -18,6 +19,10 @@ const Home = () => {
 
   return (
     <div className="home">
+    {/* {useEffect(() => {
+  document.getElementById('login').innerText = 'Login';
+  document.getElementById('loginHref').href = "/login"
+})} */}
       <Carrousel /> 
          <br /> 
        <Posters /> 

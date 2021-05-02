@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import User from './status';
+// import User from './status';
 import filmes from './filmes/listaFilmes'
 
 const MinhaConta = ({ativo}) => {

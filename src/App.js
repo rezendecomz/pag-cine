@@ -17,6 +17,7 @@ import Ingresso from './components/IngressoQrCode';
 import ConfirmaRegistro from './components/ConfirmaRegistro'
 import ConfirmaCompra from './components/ConfirmaCompra'
 import BuscaComp from './components/BuscaComp'
+import PdfGerado from './components/PdfGerado'
 const ativo = true;
 
 function App() {
@@ -69,6 +70,9 @@ function App() {
             </Route>
             <Route exact path="/busca">
               <BuscaComp />
+            </Route>
+            <Route exact path="/PdfGerado">
+              <PdfGerado />
             </Route>
             <Route exact path="/esqueci">
               <Esqueci />

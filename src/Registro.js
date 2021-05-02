@@ -21,7 +21,7 @@ const Registro = () => {
     <div className="card bg-dark">
   <article className="card-body mx-auto" style={{maxWidth: '420px'}}>
     <h4 className="card-title mt-3 text-center">Crie sua conta!</h4>
-    <form action="/login" method='post'>
+    <form action="/confirmaRegistro">
       <div className="form-group input-group">
         <div className="input-group-prepend">
           <span className="input-group-text"> <i className="fa fa-user" /> </span>

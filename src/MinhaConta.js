@@ -50,7 +50,7 @@ const MinhaConta = ({ativo}) => {
                     <p className="card-text"><i class="fas fa-credit-card fa-lg"></i>Crédito -  MasterCard</p>
                     <p className="card-text"><i class="fas fa-dollar-sign fa-lg"></i> Total: R$ 82,50</p>
                     <p className="card-text"><i class="far fa-sticky-note fa-lg"></i>  Pedido: 8954645</p>
-                    <p className="card-text"><i class="fas fa-file-download"></i>  <span><a href="/pdf/ingresso_8954645.pdf">Baixar ingresso em PDF</a></span></p>
+                    <p className="card-text"><i class="fas fa-file-download"></i>  <span><a href="/pdf/ingresso_8954645.pdf" target="_blank">Baixar ingresso em PDF</a></span></p>
 
                 </div>
             </div>
@@ -85,7 +85,7 @@ const MinhaConta = ({ativo}) => {
                     <p className="card-text"><i class="fas fa-credit-card fa-lg"></i>Crédito -  MasterCard</p>
                     <p className="card-text"><i class="fas fa-dollar-sign fa-lg"></i> Total: R$ 60,50</p>
                     <p className="card-text"><i class="far fa-sticky-note fa-lg"></i>  Pedido: 654654645</p>
-                    <p className="card-text"><i class="fas fa-file-download"></i>  <span><a href="/pdf/ingresso_8954645.pdf">Baixar ingresso em PDF</a></span></p>
+                    <p className="card-text"><i class="fas fa-file-download"></i>  <span><a href="/pdf/ingresso_8954645.pdf" target="_blank">Baixar ingresso em PDF</a></span></p>
 
                 </div>
             </div>

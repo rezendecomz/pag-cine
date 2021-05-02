@@ -23,7 +23,7 @@ import React, { useRef, useEffect } from "react";
         onApprove: async (data, actions) => {          
           const order = await actions.order.capture();                      
           console.log(order.value);
-          window.location.href = "http://localhost:3000/Ingresso";   
+          window.location.href = "http://localhost:3000/minhaConta";   
                    
         },
         onError: (err) => {

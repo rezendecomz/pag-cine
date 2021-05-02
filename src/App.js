@@ -14,7 +14,8 @@ import Cinema from './components/Cinema'
 import { chairs } from './utils';
 import TrailersAll from './filmes/trailersAll';
 import Ingresso from './components/IngressoQrCode';
-
+import ConfirmaRegistro from './components/ConfirmaRegistro'
+const ativo = true;
 
 function App() {
 
@@ -34,7 +35,7 @@ function App() {
             <Route exact path="/lista-de-filmes">
               <ListaDeFilmes />
             </Route>
-            <Route exact path="/trailers/">
+            <Route exact path="/trailers">
               <TrailersAll />
             </Route>
             <Route exact path="/trailers/:id">
@@ -50,10 +51,16 @@ function App() {
               <Login />
             </Route>
             <Route exact path="/minhaConta">
+              <MinhaConta ativo={ativo}/>
+            </Route>
+            <Route exact path="/minhaConta1">
               <MinhaConta />
             </Route>
             <Route exact path="/registro">
               <Registro />
+            </Route>
+            <Route exact path="/confirmaRegistro">
+              <ConfirmaRegistro />
             </Route>
             <Route exact path="/esqueci">
               <Esqueci />

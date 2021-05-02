@@ -39,7 +39,7 @@ const Navbar = () => {
             </div>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/trailers/"><i className="fas fa-video" />Trailers</a>
+            <a className="nav-link" href="/trailers"><i className="fas fa-video" />Trailers</a>
           </li>
         </ul>
         <form className="form-inline my-2 my-lg-0" action="/programacao">
@@ -47,7 +47,8 @@ const Navbar = () => {
           <button className="btn btn-secondary my-2 my-sm-0" type="submit"><i className="fas fa-search" /></button>
         </form>
         <li className="nav-item">
-          <Link className="nav-link" to="/login"><i className="fas fa-user" id='trocalink' /><span id='login'>{User.usuario}</span> </Link>
+          <Link className="nav-link" id="loginHref" to="/login"><i className="fas fa-user" id='trocalink' /><span id='login'>{User.usuario}</span> </Link>
+          {/* <Link className="nav-link" id="loginHref" to="/minhaConta"><i className="fas fa-user" id='trocalink' /><span id='login'>João Pedro</span> </Link> */}
         </li>
       </div>
     </nav>

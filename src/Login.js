@@ -30,7 +30,7 @@ const Login = () => {
           </div>
 
           <div className="col-md-6 offset-md-3">
-            <Link to="./minhaConta"><button className="btn btn-primary">Logar</button></Link>
+            <Link to="./minhaConta1"><button className="btn btn-primary">Logar</button></Link>
             <Link to="/esqueci" className="btn btn-link">
               Esqueci a senha
             </Link>

@@ -42,8 +42,8 @@ const Navbar = () => {
             <a className="nav-link" href="/trailers"><i className="fas fa-video" />Trailers</a>
           </li>
         </ul>
-        <form className="form-inline my-2 my-lg-0" action="/programacao">
-          <input className="form-control mr-sm-2" type="text" placeholder="Cinemas, Filmes, Salas..." />
+        <form className="form-inline my-2 my-lg-0" method="GET" action="/busca">
+          <input className="form-control mr-sm-2" type="text" placeholder="Cinemas, Filmes e Gêneros..." />
           <button className="btn btn-secondary my-2 my-sm-0" type="submit"><i className="fas fa-search" /></button>
         </form>
         <li className="nav-item">

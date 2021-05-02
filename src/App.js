@@ -16,6 +16,7 @@ import TrailersAll from './filmes/trailersAll';
 import Ingresso from './components/IngressoQrCode';
 import ConfirmaRegistro from './components/ConfirmaRegistro'
 import ConfirmaCompra from './components/ConfirmaCompra'
+import BuscaComp from './components/BuscaComp'
 const ativo = true;
 
 function App() {
@@ -65,6 +66,9 @@ function App() {
             </Route>
             <Route exact path="/ConfirmaCompra">
               <ConfirmaCompra />
+            </Route>
+            <Route exact path="/busca">
+              <BuscaComp />
             </Route>
             <Route exact path="/esqueci">
               <Esqueci />

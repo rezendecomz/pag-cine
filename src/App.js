@@ -13,11 +13,12 @@ import Programacao from './Programacao'
 import Cinema from './components/Cinema'
 import { chairs } from './utils';
 import TrailersAll from './filmes/trailersAll';
-import Ingresso from './components/IngressoQrCode';
+import Ingressos from './components/IngressoQrCode';
 import ConfirmaRegistro from './components/ConfirmaRegistro'
 import ConfirmaCompra from './components/ConfirmaCompra'
 import BuscaComp from './components/BuscaComp'
 import PdfGerado from './components/PdfGerado'
+import PDF from './components/PDF';
 const ativo = true;
 
 function App() {
@@ -77,9 +78,12 @@ function App() {
             <Route exact path="/esqueci">
               <Esqueci />
             </Route>
-            <Route exact path="/Ingresso">
-              <Ingresso />
+            <Route exact path="/Ingressos">
+              <Ingressos />
             </Route>
+            <Route exact path="/PDF">
+              <PDF />
+            </Route> 
           </Switch>
         </div>
       </div>

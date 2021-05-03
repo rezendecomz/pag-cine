@@ -19,7 +19,7 @@ const Pagamento = ({precoUn, qtde, money = 0 }) => {
        checkout ? (
          <>
          <div>
-           <a href="/pagamento/pix"><img src="/img/pix_logo.png" alt="" style={style}/></a> 
+           <a href="/pagamento/pix" target="_blank"><img src="/img/pix_logo.png" alt="" style={style}/></a> 
          </div>
         <PayPal />
         </>

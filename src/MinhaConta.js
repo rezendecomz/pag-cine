@@ -8,7 +8,7 @@ const MinhaConta = ({ativo}) => {
     <div>
     {useEffect(() => {
       document.getElementById('login').innerText = 'João Pedro';
-      document.getElementById('loginHref').href = "/minhaConta2"
+      document.getElementById('loginHref').href = "/minhaConta"
     })}
 <div className="container mt-2">
   <div className="row">

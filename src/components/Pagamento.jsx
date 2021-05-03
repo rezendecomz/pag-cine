@@ -3,6 +3,10 @@ import Pag from "./Pagamento.module.css";
 import PayPal from "./PayPal";
 const Pagamento = ({precoUn, qtde, money = 0 }) => {
   const [checkout, setCheckOut] = useState(false);
+    const style = {
+    marginBottom: '20px',
+    marginTop: '10px'
+  };
   
   return (
     <div className = {Pag.main}>
@@ -13,7 +17,12 @@ const Pagamento = ({precoUn, qtde, money = 0 }) => {
 
       {        
        checkout ? (
+         <>
+         <div>
+           <a href="/pagamento/pix"><img src="/img/pix_logo.png" alt="" style={style}/></a> 
+         </div>
         <PayPal />
+        </>
       ) : (
         <button
           onClick={() => {

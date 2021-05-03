@@ -1,5 +1,5 @@
 let User = {
-  usuario: 'Login',
+  usuario: 'Login / Registro',
   trocaStatus() {
     console.log('usuario trocado')
     this.usuario = 'entrou'
